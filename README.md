@@ -6,7 +6,7 @@ J.P. Marques et Al., https://doi.org/10.1016/j.neuroimage.2009.10.002
 J.P. Marques and R. Gruetter,  https://doi.org/10.1371/journal.pone.0069294
 
 I developped a Bruker method to run with Paravision 6 and the associated software
-written as a mixture of C program and python script to analyze the data. The processing
+written as a mixture of C program and python scripts to analyze the data. The processing
 software requires only to have access to the "method" file of the expreriment and the
 2dseq file obtained from a complex Fourier transform of the aquired fid data.
 
