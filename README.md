@@ -11,7 +11,7 @@ software requires only to have access to the "method" file of the expreriment an
 2dseq file obtained from a complex Fourier transform of the aquired fid data.
 
 ```diff
-- Both the Paravision method and the processing software is to be used at the user own risk.
-- I do not take any responsibility whatsoever for the usage of both the method and the processing
-- software.
+-- Both the Paravision method and the processing software is to be used at the user own risk.
+-- I do not take any responsibility whatsoever for the usage of both the method and the processing
+-- software.
 ```
