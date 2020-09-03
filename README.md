@@ -10,6 +10,8 @@ written as a mixture of C program and python scripts to analyze the data. The pr
 software requires only to have access to the "method" file of the expreriment and the
 2dseq file obtained from a complex Fourier transform of the aquired fid data.
 
-Both the Paravision method and the processing software is to be used at the user own risk.
+```diff
+- Both the Paravision method and the processing software is to be used at the user own risk.
 I do not take any responsibility whatsoever for the usage of both the method and the processing
 software.
+```
