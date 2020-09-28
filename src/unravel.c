@@ -82,7 +82,6 @@ double	* unrav ( double * l, double * mpint, double * T, int * readpt, int * nli
         int	i, j, k, fl;
         double  * m, phu;
         
-        /*printf ( "%d\t%d\n",*readpt, *nlin);*/
 	m = ( double * ) malloc ( (* readpt ) * sizeof ( double ) );
         for ( i = 0; i < * readpt; i++ ) {
             fl = 0;
@@ -96,21 +95,17 @@ double	* unrav ( double * l, double * mpint, double * T, int * readpt, int * nli
                       fl = 1;
                       m[i] = T[j];
                       phu = m[i];
-            /*printf ( "%lf\t%lf\n",m[i], l[i]);*/
-            /*printf ( "%d\t%d\t%lf\t%lf\n",i, j, m[i], l[i]);*/
                    } 
                }
                else if ( fl == 1 ) {
                    if ( l[i]  > mpint[j] ) {
                       m[i] = phu;
                       fl = 1;
-            /*printf ( "Deux: %d\t%d\t%lf\t%lf\n",i, j, m[i], l[i]);*/
                    }
                    else {
                        k = j - 0;
                        m[i] = T[k];
-            /*printf ( "Trois: %d\t%d\t%lf\t%lf\t%lf\n",i, j, mpint[j], m[i], l[i]);*/
-                       break;
+            break;
                    }                   
 
                 }
