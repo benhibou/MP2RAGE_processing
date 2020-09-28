@@ -109,9 +109,7 @@ int 	main ( int argc, char ** argv )
             for ( i = 0 ; i < 4 ; i++ ) {
 	        l[i] = ptr[i];
             }
-            /*for ( j = 0 ; j < readpt ; j++ ) {
-                    printf ( "%d %d\t%d\t%d\t%d\n",  j, l[0][j], l[1][j], l[2][j], l[3][j]);
-            }*/
+            
             for ( j = 0 ; j < readpt ; j++ ) {
                 denom[j] = 0;
                 numer[j] = 0;
@@ -119,14 +117,13 @@ int 	main ( int argc, char ** argv )
                 mp2Rage_2[j] = 0;
                 for ( n = 0 ; n < ni ; n++ ) {
                     denom[j] += ( l[n][j] * l[n][j] );
-                    /*printf ( "%d\n", denom[k+j]);*/
                 }
                 numer[j] = l[0][j] * l[1][j] + l[2][j] * l[3][j]; 
                 mp2Rage[j] = ( numer[j] / (double)denom[j] );
+		/* To help render the background darker one tries the following */
                 denom[j] += 2000000; 
                 numer[j] -= 1000000;
                 mp2Rage_2[j] = ( numer[j] / (double)denom[j] );
-                /*printf ( "%ld %ld %lf\n", numer[j], denom[j], mp2Rage[j]);*/
             }
             k += readpt ;
             printf ( "%f\n", k/(double)128 );
@@ -135,9 +132,5 @@ int 	main ( int argc, char ** argv )
 	}
 	fclose ( fp );
 	fclose ( gp );
-	/*free ( ptr );
-	free ( l );
-	free ( hp );
-	free ( filnam );*/
 	return 1;
 }
