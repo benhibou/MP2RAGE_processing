@@ -106,11 +106,6 @@ def main():
 	plt.plot ( MP2RAGE, T1 )
 	plt.show()
 
-	#for i in range(0, len(T1)):
-	#    for j in range(0, len(T1)):
-        #        if ( MP2RAGE[i] > 0.4 ):
-        #           if ( MP2RAGE[j] < MP2RAGE[i] ):
-        #              T1[j] = T1[i]
 	MP2RAGEFil = data_dir + "/MP2Rage-T1"
 	MMF = open (MP2RAGEFil, 'w' )
 	for i in range(0, len(T1)):
