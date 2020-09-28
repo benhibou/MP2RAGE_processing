@@ -81,11 +81,7 @@ int 	main ( int argc, char ** argv )
             }
 	}
 	fclose ( fp );
-	/*for ( i = 0 ; i < ni ; i++ ) {
-	    fclose ( hp[i] );
-	    free ( hp[i] );
-	    free ( filnam[i] );
-        }*/
+	
 	free ( ptr );
 	free ( hp );
 	free ( filnam );
