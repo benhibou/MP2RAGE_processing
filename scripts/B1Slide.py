@@ -38,7 +38,6 @@ axis_color = 'lightgoldenrodyellow'
 amp_0 = 15
 
 def main():
-    #data = read_data('/home/spectro/B1map/workspace/B1map', 32, 64)
     data = read_data( file, int ( nslices ), int ( npoints ), int ( npoints1 ) )
     cube_show_slider( data, 0, cmap='gray' )
     #cube_show_slider( data, 0, cmap='gray', vmin = 0.4, vmax = 4 )
