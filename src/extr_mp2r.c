@@ -1,8 +1,8 @@
 /****************************************
 ** extr_mp2r.c
 ** Extract data from a complex 2dseq
-** file and distribute it into two real
-** and imaginary type of files.
+** Bruker file and distribute it into
+** two real and imaginary type of files.
 ******************************************/
 
 
